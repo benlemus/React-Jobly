@@ -1,0 +1,49 @@
+.jobContainer {
+  background-color: white;
+  color: black;
+  min-height: 60px;
+  padding: 20px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  min-width: 55vw;
+  max-width: 55vw;
+}
+
+.jobTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.jobSalary {
+  font-size: 0.9rem;
+}
+
+.jobEquity {
+  font-size: 0.9rem;
+}
+
+.applyBtn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.applyBtn button {
+  height: 35px;
+  width: 60px;
+  background-color: rgb(0, 140, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.applyBtn button:hover {
+  background-color: rgb(0, 99, 180);
+}
+
+.appliedBtn {
+  background-color: rgb(162, 162, 162) !important;
+}

@@ -1,0 +1,11 @@
+.loginBtn {
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}

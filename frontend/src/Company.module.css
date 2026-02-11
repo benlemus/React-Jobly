@@ -1,0 +1,19 @@
+.companyContainer {
+  background-color: white;
+  color: black;
+  min-height: 60px;
+  padding: 20px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 55vw;
+  max-width: 55vw;
+}
+
+.companyName {
+  font-size: 1.3rem;
+}
+
+.companyDesc {
+  font-size: 0.9rem;
+}

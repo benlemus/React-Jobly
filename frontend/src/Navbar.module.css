@@ -1,0 +1,50 @@
+.navContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 100vw;
+  height: 60px;
+  box-shadow: 0 5px 10px rgba(41, 41, 41, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  text-align: start;
+  margin-left: 25px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.userLinks {
+  width: 400px;
+}
+
+.noUserLinks {
+  width: 200px;
+}
+
+.userLinks ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.noUserLinks ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.userLinks li,
+.noUserLinks li {
+  list-style-type: none;
+  text-align: center;
+  cursor: pointer;
+}

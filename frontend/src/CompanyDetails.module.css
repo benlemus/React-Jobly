@@ -1,0 +1,13 @@
+.companyDetails {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 175px;
+}
+
+.companyName {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

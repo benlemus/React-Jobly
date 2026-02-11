@@ -1,0 +1,21 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.searchContainer input {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  width: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.searchContainer button {
+  margin-left: 10px;
+
+  width: 90px;
+}
