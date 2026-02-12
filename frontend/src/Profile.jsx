@@ -9,16 +9,16 @@ export default function Profile({ curUser }) {
       <h1>Profile</h1>
       <div className={styles.profileInfo}>
         <p>
-          <strong>Username:</strong> {curUser.username}
+          Username: <strong>{curUser.username}</strong>
         </p>
         <p>
-          <strong>First Name:</strong> {curUser.firstName}
+          First Name: <strong>{curUser.firstName}</strong>
         </p>
         <p>
-          <strong>Last Name:</strong> {curUser.lastName}
+          Last Name: <strong>{curUser.lastName}</strong>
         </p>
         <p>
-          <strong>Email:</strong> {curUser.email}
+          Email: <strong>{curUser.email}</strong>
         </p>
       </div>
       <button onClick={() => nav("/profile/update")}>Update Profile</button>

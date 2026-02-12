@@ -20,11 +20,10 @@ export default function Login({ login }) {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    login(formData);
+    await login(formData);
     nav("/", { replace: true });
-    setFormData(formSetup);
   };
 
   return (

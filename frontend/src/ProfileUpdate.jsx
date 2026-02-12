@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./ProfileUpdate.module.css";
 
 export default function ProfileUpdate({ curUser, updateProfile }) {
   const nav = useNavigate();
@@ -28,9 +29,9 @@ export default function ProfileUpdate({ curUser, updateProfile }) {
   };
 
   return (
-    <>
-      <h1>Update Profile</h1>
-      <form onSubmit={handleSubmit}>
+    <div className="formContainer">
+      <form onSubmit={handleSubmit} className="form">
+        <h1 className="formTitle">Update Profile</h1>
         <input
           type="text"
           name="firstName"
@@ -59,8 +60,10 @@ export default function ProfileUpdate({ curUser, updateProfile }) {
           onChange={handleChange}
           placeholder="Password"
         />
-        <button type="submit">Update Profile</button>
+        <button type="submit" className={styles.updateBtn}>
+          Update Profile
+        </button>
       </form>
-    </>
+    </div>
   );
 }

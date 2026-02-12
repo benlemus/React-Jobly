@@ -53,12 +53,20 @@ function App() {
 
   async function login(data) {
     const token = await api.login(data);
+    api.token = token;
+    const { username } = jwtDecode(token);
+    const userData = await api.getCurrentUser(username);
     setToken(token);
+    setCurUser(userData);
   }
 
   async function signup(data) {
     const token = await api.signup(data);
+    api.token = token;
+    const { username } = jwtDecode(token);
+    const userData = await api.getCurrentUser(username);
     setToken(token);
+    setCurUser(userData);
   }
 
   async function logout() {
@@ -91,7 +99,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="App">
       <Navbar logout={logout} curUser={curUser} />
       <div className="content">
         <Routes>
@@ -149,7 +157,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 

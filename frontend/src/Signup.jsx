@@ -23,11 +23,10 @@ export default function Signup({ signup }) {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    signup(formData);
+    await signup(formData);
     nav("/", { replace: true });
-    setFormData(formSetup);
   };
 
   return (
