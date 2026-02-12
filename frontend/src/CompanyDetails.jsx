@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import styles from "./CompanyDetails.module.css";
 import { useEffect, useState } from "react";
-import JoblyApi from "../../api";
+import JoblyApi from "./api";
 import Job from "./Job";
 
 export default function CompanyDetails({ apply, curUser }) {

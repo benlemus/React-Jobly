@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Company from "./Company";
 import Search from "./Search";
-import JoblyApi from "../../api";
+import JoblyApi from "./api";
 
 export default function Companies() {
   const [companies, setCompanies] = useState([]);

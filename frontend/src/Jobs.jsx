@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import Job from "./Job";
 import Search from "./Search";
-import JoblyApi from "../../api";
+import JoblyApi from "./api";
 
 export default function Jobs({ apply, curUser }) {
   const [jobs, setJobs] = useState([]);

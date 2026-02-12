@@ -8,7 +8,7 @@ import CompanyDetails from "./CompanyDetails";
 import Jobs from "./Jobs";
 import Login from "./Login";
 import Signup from "./Signup";
-import api from "../../api";
+import api from "./api";
 import { jwtDecode } from "jwt-decode";
 import ProtectedRoute from "./ProtectedRoute";
 import Profile from "./Profile";
